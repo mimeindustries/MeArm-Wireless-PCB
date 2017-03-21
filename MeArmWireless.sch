@@ -1,0 +1,507 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom-symbols
+LIBS:MeArmWireless-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LOGO ART3
+U 1 1 57D2D6DF
+P 6250 7375
+F 0 "ART3" H 6250 7625 60  0001 C CNN
+F 1 "LOGO" H 6250 7225 60  0001 C CNN
+F 2 "Custom:MIME_LOGO" H 6250 7375 60  0001 C CNN
+F 3 "" H 6250 7375 60  0000 C CNN
+	1    6250 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO ART2
+U 1 1 57D2D6F7
+P 5275 7375
+F 0 "ART2" H 5275 7625 60  0001 C CNN
+F 1 "LOGO" H 5275 7225 60  0001 C CNN
+F 2 "Custom:MEARM_LOGO_NEW" H 5275 7375 60  0001 C CNN
+F 3 "" H 5275 7375 60  0000 C CNN
+	1    5275 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSHW-LOGO ART1
+U 1 1 57D2D713
+P 4150 7325
+F 0 "ART1" H 4150 7500 60  0001 C CNN
+F 1 "OSHW-LOGO" H 4150 7150 60  0001 C CNN
+F 2 "Custom:OSHW_LOGO" H 4150 7325 60  0001 C CNN
+F 3 "" H 4150 7325 60  0000 C CNN
+	1    4150 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 57D2DA78
+P 7825 5250
+F 0 "P1" H 7825 5450 50  0000 C CNN
+F 1 "CONN_02X03" H 7825 5050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7825 4050 50  0001 C CNN
+F 3 "" H 7825 4050 50  0000 C CNN
+	1    7825 5250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1375 1175 1500 1475
+U 57D6A9F6
+F0 "Joysticks" 60
+F1 "joysticks.sch" 60
+F2 "SCL" I R 2875 1950 60 
+F3 "SDA" I R 2875 2100 60 
+F4 "BUT1" I R 2875 2250 60 
+F5 "BUT2" I R 2875 2400 60 
+$EndSheet
+$Sheet
+S 1350 5400 1475 1475
+U 57D6B0DE
+F0 "Power" 60
+F1 "power.sch" 60
+$EndSheet
+$Comp
+L +3V3 #PWR01
+U 1 1 57D6BC35
+P 5475 3150
+F 0 "#PWR01" H 5475 3000 50  0001 C CNN
+F 1 "+3V3" H 5475 3290 50  0000 C CNN
+F 2 "" H 5475 3150 50  0000 C CNN
+F 3 "" H 5475 3150 50  0000 C CNN
+	1    5475 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57D6EE4D
+P 6875 5550
+F 0 "#PWR02" H 6875 5300 50  0001 C CNN
+F 1 "GND" H 6875 5400 50  0000 C CNN
+F 2 "" H 6875 5550 50  0000 C CNN
+F 3 "" H 6875 5550 50  0000 C CNN
+	1    6875 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR03
+U 1 1 57D6EEC5
+P 8275 5000
+F 0 "#PWR03" H 8275 4850 50  0001 C CNN
+F 1 "VSS" H 8275 5150 50  0000 C CNN
+F 2 "" H 8275 5000 50  0000 C CNN
+F 3 "" H 8275 5000 50  0000 C CNN
+	1    8275 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 5250 0    40   Input ~ 0
+BASE_SERVO
+Text GLabel 7450 5350 0    40   Input ~ 0
+RIGHT_SERVO
+Text GLabel 8200 5250 2    40   Input ~ 0
+LEFT_SERVO
+Text GLabel 8200 5350 2    40   Input ~ 0
+GRIP_SERVO
+Text GLabel 6175 2825 0    40   Input ~ 0
+BASE_SERVO
+Text GLabel 6175 3025 0    40   Input ~ 0
+RIGHT_SERVO
+Text GLabel 6175 2925 0    40   Input ~ 0
+LEFT_SERVO
+Text GLabel 7850 2725 2    40   Input ~ 0
+BUTTON1
+Text GLabel 7850 2825 2    40   Input ~ 0
+BUTTON2
+$Comp
+L CONN_01X04 P5
+U 1 1 57FBB05B
+P 9875 5200
+F 0 "P5" H 9875 5450 50  0000 C CNN
+F 1 "CONN_01X04" V 9975 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 9875 5200 50  0001 C CNN
+F 3 "" H 9875 5200 50  0000 C CNN
+	1    9875 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57FBB886
+P 10425 5550
+F 0 "#PWR04" H 10425 5300 50  0001 C CNN
+F 1 "GND" H 10425 5400 50  0000 C CNN
+F 2 "" H 10425 5550 50  0000 C CNN
+F 3 "" H 10425 5550 50  0000 C CNN
+	1    10425 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR05
+U 1 1 57FBB8D0
+P 10425 4925
+F 0 "#PWR05" H 10425 4775 50  0001 C CNN
+F 1 "+3V3" H 10425 5065 50  0000 C CNN
+F 2 "" H 10425 4925 50  0000 C CNN
+F 3 "" H 10425 4925 50  0000 C CNN
+	1    10425 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 580629AB
+P 7900 3650
+F 0 "#PWR06" H 7900 3400 50  0001 C CNN
+F 1 "GND" H 7900 3500 50  0000 C CNN
+F 2 "" H 7900 3650 50  0000 C CNN
+F 3 "" H 7900 3650 50  0000 C CNN
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1375 3275 1475 1475
+U 5806401C
+F0 "usb" 60
+F1 "usb.sch" 60
+F2 "GPIO0" I R 2850 4025 60 
+F3 "RST" I R 2850 4175 60 
+F4 "DOUT" I R 2850 4325 60 
+F5 "DIN" I R 2850 4475 60 
+$EndSheet
+Text GLabel 3100 4025 2    60   Input ~ 0
+SDA
+Text GLabel 3100 4175 2    60   Input ~ 0
+RESET
+Text GLabel 3100 4325 2    60   Input ~ 0
+TX
+Text GLabel 3100 4475 2    60   Input ~ 0
+RX
+Text GLabel 7850 2525 2    40   Input ~ 0
+TX
+Text GLabel 7850 2625 2    40   Input ~ 0
+RX
+Wire Wire Line
+	8075 5150 8275 5150
+Wire Wire Line
+	8275 5150 8275 5000
+Wire Wire Line
+	6875 5550 6875 5150
+Wire Wire Line
+	6875 5150 7575 5150
+Wire Wire Line
+	7575 5250 7450 5250
+Wire Wire Line
+	7575 5350 7450 5350
+Wire Wire Line
+	8075 5250 8200 5250
+Wire Wire Line
+	8075 5350 8200 5350
+Wire Wire Line
+	10075 5250 10425 5250
+Wire Wire Line
+	10075 5050 10150 5050
+Wire Wire Line
+	10075 5350 10425 5350
+Wire Wire Line
+	10425 5350 10425 5550
+Wire Wire Line
+	10075 5150 10150 5150
+Wire Wire Line
+	2850 4325 3100 4325
+Wire Wire Line
+	3100 4025 2850 4025
+Wire Wire Line
+	2850 4175 3100 4175
+Wire Wire Line
+	3100 4475 2850 4475
+Text GLabel 5925 2525 0    40   Input ~ 0
+RESET
+Text GLabel 6175 3125 0    40   Input ~ 0
+GRIP_SERVO
+$Comp
+L WS2812B L1
+U 1 1 5806D074
+P 4950 5325
+F 0 "L1" H 5200 5025 60  0000 C CNN
+F 1 "WS2812B" H 5000 5575 60  0000 C CNN
+F 2 "Custom:WS2812B" H 4950 5325 60  0001 C CNN
+F 3 "" H 4950 5325 60  0000 C CNN
+	1    4950 5325
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 5425
+Wire Wire Line
+	5450 5225 5675 5225
+Wire Wire Line
+	5450 5425 5675 5425
+Wire Wire Line
+	4550 5225 4300 5225
+Text GLabel 5675 5225 2    60   Input ~ 0
+LED
+$Comp
+L GND #PWR07
+U 1 1 5806DAB8
+P 5675 5525
+F 0 "#PWR07" H 5675 5275 50  0001 C CNN
+F 1 "GND" H 5675 5375 50  0000 C CNN
+F 2 "" H 5675 5525 50  0000 C CNN
+F 3 "" H 5675 5525 50  0000 C CNN
+	1    5675 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR08
+U 1 1 5806DD4D
+P 4300 5125
+F 0 "#PWR08" H 4300 4975 50  0001 C CNN
+F 1 "+3V3" H 4300 5265 50  0000 C CNN
+F 2 "" H 4300 5125 50  0000 C CNN
+F 3 "" H 4300 5125 50  0000 C CNN
+	1    4300 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 5425 5675 5525
+Wire Wire Line
+	4300 5225 4300 5125
+Text GLabel 8475 3125 2    40   Input ~ 0
+LED
+Text GLabel 10150 5050 2    40   Input ~ 0
+SCL
+Text GLabel 10150 5150 2    40   Input ~ 0
+SDA
+Text GLabel 8725 3025 2    40   Input ~ 0
+SCL
+Text GLabel 8725 2925 2    40   Input ~ 0
+SDA
+Wire Wire Line
+	10425 5250 10425 4925
+$Comp
+L ESP-12E U1
+U 1 1 5873D0D3
+P 7025 2875
+F 0 "U1" H 7425 3375 60  0000 R CNN
+F 1 "ESP-12E" H 6825 3375 60  0000 C CNN
+F 2 "Custom:ESP-12E" H 6625 2875 60  0001 C CNN
+F 3 "" H 6625 2875 60  0000 C CNN
+	1    7025 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5873F6A6
+P 6050 2225
+F 0 "R1" V 6130 2225 50  0000 C CNN
+F 1 "10k" V 6050 2225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5980 2225 50  0001 C CNN
+F 3 "" H 6050 2225 50  0000 C CNN
+F 4 "y" H 6050 2225 60  0001 C CNN "Required"
+	1    6050 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5873F761
+P 6250 2225
+F 0 "R2" V 6330 2225 50  0000 C CNN
+F 1 "10k" V 6250 2225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6180 2225 50  0001 C CNN
+F 3 "" H 6250 2225 50  0000 C CNN
+F 4 "y" H 6250 2225 60  0001 C CNN "Required"
+	1    6250 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5873F80B
+P 8425 2575
+F 0 "R3" V 8505 2575 50  0000 C CNN
+F 1 "10k" V 8425 2575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8355 2575 50  0001 C CNN
+F 3 "" H 8425 2575 50  0000 C CNN
+F 4 "y" H 8425 2575 60  0001 C CNN "Required"
+	1    8425 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5873F87F
+P 8625 2575
+F 0 "R4" V 8705 2575 50  0000 C CNN
+F 1 "10k" V 8625 2575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8555 2575 50  0001 C CNN
+F 3 "" H 8625 2575 50  0000 C CNN
+F 4 "y" H 8625 2575 60  0001 C CNN "Required"
+	1    8625 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR09
+U 1 1 58740126
+P 6150 1950
+F 0 "#PWR09" H 6150 1800 50  0001 C CNN
+F 1 "+3V3" H 6150 2090 50  0000 C CNN
+F 2 "" H 6150 1950 50  0000 C CNN
+F 3 "" H 6150 1950 50  0000 C CNN
+	1    6150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2075 6050 2000
+Wire Wire Line
+	6050 2000 6250 2000
+Wire Wire Line
+	6250 2000 6250 2075
+Wire Wire Line
+	6150 1950 6150 2000
+Connection ~ 6150 2000
+Wire Wire Line
+	5925 2525 6425 2525
+Wire Wire Line
+	6050 2375 6050 2525
+Connection ~ 6050 2525
+Wire Wire Line
+	6425 2725 6250 2725
+Wire Wire Line
+	6250 2725 6250 2375
+Wire Wire Line
+	6425 2825 6175 2825
+Wire Wire Line
+	6425 2925 6175 2925
+Wire Wire Line
+	6175 3025 6425 3025
+Wire Wire Line
+	6425 3125 6175 3125
+Wire Wire Line
+	5475 3150 5475 3225
+Wire Wire Line
+	5475 3225 6425 3225
+Wire Wire Line
+	7625 3225 7900 3225
+Wire Wire Line
+	7900 3225 7900 3650
+Wire Wire Line
+	8475 3125 7625 3125
+Wire Wire Line
+	7625 2825 7850 2825
+Wire Wire Line
+	7850 2725 7625 2725
+Wire Wire Line
+	7625 2625 7850 2625
+Wire Wire Line
+	7850 2525 7625 2525
+Wire Wire Line
+	7625 2925 8725 2925
+Wire Wire Line
+	7625 3025 8725 3025
+Wire Wire Line
+	8425 2725 8425 2925
+Connection ~ 8425 2925
+Wire Wire Line
+	8625 2725 8625 3025
+Connection ~ 8625 3025
+$Comp
+L +3V3 #PWR010
+U 1 1 5874083D
+P 8525 2325
+F 0 "#PWR010" H 8525 2175 50  0001 C CNN
+F 1 "+3V3" H 8525 2465 50  0000 C CNN
+F 2 "" H 8525 2325 50  0000 C CNN
+F 3 "" H 8525 2325 50  0000 C CNN
+	1    8525 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8425 2425 8425 2375
+Wire Wire Line
+	8425 2375 8625 2375
+Wire Wire Line
+	8625 2375 8625 2425
+Wire Wire Line
+	8525 2325 8525 2375
+Connection ~ 8525 2375
+NoConn ~ 6775 3675
+NoConn ~ 6875 3675
+NoConn ~ 6975 3675
+NoConn ~ 7075 3675
+NoConn ~ 7175 3675
+NoConn ~ 7275 3675
+NoConn ~ 6425 2625
+Text GLabel 3100 2100 2    60   Input ~ 0
+SDA
+Text GLabel 3100 1950 2    60   Input ~ 0
+SCL
+Text GLabel 3100 2250 2    60   Input ~ 0
+BUTTON1
+Text GLabel 3100 2400 2    60   Input ~ 0
+BUTTON2
+Wire Wire Line
+	2875 1950 3100 1950
+Wire Wire Line
+	3100 2100 2875 2100
+Wire Wire Line
+	2875 2250 3100 2250
+Wire Wire Line
+	3100 2400 2875 2400
+$Comp
+L R R5
+U 1 1 58CFC77E
+P 8200 3375
+F 0 "R5" V 8280 3375 50  0000 C CNN
+F 1 "10k" V 8200 3375 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8130 3375 50  0001 C CNN
+F 3 "" H 8200 3375 50  0000 C CNN
+F 4 "y" H 8200 3375 60  0001 C CNN "Required"
+	1    8200 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3225 8200 3125
+Connection ~ 8200 3125
+Wire Wire Line
+	8200 3525 8200 3575
+Wire Wire Line
+	8200 3575 7900 3575
+Connection ~ 7900 3575
+$EndSCHEMATC
